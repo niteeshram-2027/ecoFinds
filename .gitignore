@@ -1,0 +1,14 @@
+# Ignore ALL node_modules in project
+node_modules/
+
+# Logs
+logs
+*.log
+
+# Env files
+.env
+.env.local
+
+# Build outputs
+build/
+dist/

@@ -1,0 +1,21 @@
+{
+  "name": "ecofinds",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm start --prefix frontend\" \"npm start --prefix backend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niteeshram-2027/ecoFinds.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niteeshram-2027/ecoFinds/issues"
+  },
+  "homepage": "https://github.com/niteeshram-2027/ecoFinds#readme",
+  "description": ""
+}
