@@ -1,14 +1,17 @@
-const express = require("express");
-const cors = require("cors");
-const mongoose = require("mongoose");
+const express = require('express');
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const app = express();
-app.use(cors());
+
 app.use(express.json());
+const healthRoute = require("./routes/health");
+// routes and middleware
+app.use("/api/health",healthRoute);
 
-app.get("/", (req, res) => {
-  res.send("Backend is running!");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT,()=>{
+  console.log(`Server is running on the port ${PORT}`);
 });
-
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
